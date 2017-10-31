@@ -67,6 +67,9 @@ a:focus
     text-shadow: 0 1px 0 #ffffff;
 }
 
+.navbar .nav > li > a:focus{
+    color: #777777;
+}
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
@@ -78,6 +81,7 @@ a:focus
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
 
 
 .navbar .nav > li > a:hover {
