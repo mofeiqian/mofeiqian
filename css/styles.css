@@ -117,6 +117,7 @@ header{
 	position:fixed;
 	background: rgb(255,255,255);/* Fall-back for browsers that don't support rgba */
 	background: rgba(255,255,255,.98);
+	z-index:2;
 }
 
 #logo{
@@ -305,7 +306,7 @@ a.thumbnail:focus {
 
 .process-elements{
 	margin: 0 auto;
-	width: 370px;
+	max-width: 370px;
 	padding: 50px 0;
 }
 
@@ -352,17 +353,17 @@ a.thumbnail:focus {
 }
 
 /*----------index-Profile---------*/
-#profile {
+#profile-container {
 	margin: 0 auto;
 	padding: 0 10px 20px;
 }
 
-#profile h3{
+#profile-container h3{
 	padding: 0px 4%;
-	font: italic 300 35px/48px 'Merriweather', serif; 
+	font: italic 300 30px/48px 'Merriweather', serif; 
 } 
 
-#profile p{
+#profile-container p{
 	padding: 20px 4% 20px;
 	font-size: 18px;
 	font-weight: 300;
@@ -372,9 +373,17 @@ a.thumbnail:focus {
   color: #999;
 }
 
+.profile-img {
+	max-width: 358px;
+}
+
+.profile-img img{
+	width: 100%;
+}
+
 .profile-expertise{
 	margin: 0 auto;
-	width: 380px;
+	max-width: 380px;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -413,6 +422,7 @@ footer{
 	color: #666;
 	background-color: #222;
 	text-align: center;
+	line-height: 22px;
 	font-size: 16px;
 }
 
@@ -508,17 +518,21 @@ responsive-styles
 	}	
 	
 	/*----index-profile-------*/
-	#profile{
+	#profile-container{
 		max-width: 1170px;
 		display: flex;
 	}
+	
+	.profile-text{
+		width: 69%;
+	}
 
-	#profile h3{
+	#profile-container h3{
 		font-size: 77px;
 		line-height: 100px;
 	} 
-
-	#profile p{
+		
+	#profile-container p{
 		padding: 20px 206px 40px 92px;
 	}	
 	}
@@ -575,17 +589,21 @@ responsive-styles
 	}	
 	
 	/*----index-profile-------*/
-	#profile{
+	#profile-container{
 		max-width: 890px;
 		display: flex;
 	}
-
-	#profile h3{
+	
+	.profile-text{
+		width: 60%;
+	}
+	
+	#profile-container h3{
 		font-size: 52px;
 		line-height: 70px;
 	} 
 
-	#profile p{
+	#profile-container p{
 		padding: 20px 60px 40px 60px;
 	}	
 	}
@@ -642,16 +660,16 @@ responsive-styles
 	}	
 	
 	/*----index-profile-------*/
-	#profile{
+	#profile-container{
 		max-width: 590px;
 	}
-
-	#profile h3{
+	
+	#profile-container h3{
 		font-size: 58px;
 		line-height: 80px; 
 	} 
 
-	#profile p{
+	#profile-container p{
 		padding: 20px 60px 0 40px;
 	}	
 	}
